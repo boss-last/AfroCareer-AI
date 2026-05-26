@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-orange-500: #E96B24;
+  --color-brand-orange-600: #d15a1a;
+  --color-brand-orange-400: #FF9F1C;
+  --color-brand-green-700: #2D6A4F;
+  --color-brand-green-850: #1B4332;
+  --color-bento-bg: #FDFCFB;
+  --color-bento-card: #FFFFFF;
+  --color-bento-border: #E5E1DA;
+  --color-bento-text: #1A1A1A;
+  --color-bento-muted: #5C554F;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+  background-color: #FDFCFB; /* Bento Warm White/Beige */
+  color: #1A1A1A; /* Crisp deep charcoal for maximum readability */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for beautiful dashboard appearance */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F3E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C5;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B9AA;
+}
+
+/* Glassmorphism/Bento borders and headers */
+.bento-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E1DA;
+  border-radius: 1.5rem; /* 24px - Rounded 3xl */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 8px 24px rgba(27, 33, 45, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 16px 36px rgba(233, 107, 36, 0.05);
+}
