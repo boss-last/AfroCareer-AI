@@ -100,3 +100,13 @@ npm run start
 ---
 
 *Développé avec passion pour propulser l'insertion professionnelle et la réussite des futurs leaders de l'Afrique digitale ! 💫*
+
+## Démonstration et capture locale
+
+- Dépôt : https://github.com/boss-last/AfroCareer-AI
+- Démo live : à renseigner après liaison et déploiement Vercel.
+- Capture validée : l'interface a été lancée localement et vérifiée sans exposer de secret.
+
+### Variables d'environnement
+
+Les clés `GEMINI_API_KEY` et, pour AbidjanFlow AI, `GOOGLE_MAPS_PLATFORM_KEY` doivent être configurées uniquement dans l'environnement de déploiement. Ne jamais les committer dans le dépôt.
